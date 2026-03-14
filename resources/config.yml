@@ -4,60 +4,61 @@
 #   /_/ |_/_/  \__/___/\_,_/_/\_\/_//_/___/_/\_\/_/\_, /\_, / 
 #                                                 /___//___/ 
 #
-# Config version - DO NOT CHANGE!
+# Версия конфига - НЕ МЕНЯЙТЕ!
 config-version: 1.3
 
-# Settings...
-# Default interval = 300 seconds ( 5 minutes )...
+# Настройки...
+# Интервал 180 секунд = 3 минуты
 settings:
-  interval: 300
+  interval: 180
   countdown:
-    "60": # - Your messages arrive exactly at the times you specify...
-      message: "§l§2ServerCleaner » Server cleaning in §f1 §2minute..." # - Custom messages...
-      type: "tip" # - Message type - tip, toast, message...
+    "60": 
+      message: "§l§2Очистка » Очистка сервера через §f1 §2минуту..."
+      type: "tip"
     "30":
-      message: "§l§2ServerCleaner » Server cleanup in §f30 §2seconds..."
+      message: "§l§2Очистка » Очистка сервера через §f30 §2секунд..."
       type: "toast"
     "20":
-      message: "§l§2ServerCleaner » Server cleanup in §f20 §2seconds..."
+      message: "§l§2Очистка » Очистка сервера через §f20 §2секунд..."
       type: "message"
     "10":
-      message: "§l§2ServerCleaner » Server cleanup in §f10 §2seconds..."
+      message: "§l§2Очистка » Очистка сервера через §f10 §2секунд..."
       type: "message"
     "5":
-      message: "§l§2ServerCleaner » Server cleanup in §f5 §2seconds..."
+      message: "§l§2Очистка » Очистка сервера через §f5 §2секунд..."
       type: "message"
     "4":
-      message: "§l§2ServerCleaner » Server cleanup in §f4 §2seconds..."
+      message: "§l§2Очистка » Очистка сервера через §f4 §2секунды..."
       type: "message"
     "3":
-      message: "§l§2ServerCleaner » Server cleanup in §f3 §2seconds..."
+      message: "§l§2Очистка » Очистка сервера через §f3 §2секунды..."
       type: "message"
     "2":
-      message: "§l§2ServerCleaner » Server cleanup in §f2 §2seconds..."
+      message: "§l§2Очистка » Очистка сервера через §f2 §2секунды..."
       type: "message"
     "1":
-      message: "§l§2ServerCleaner » Server cleanup in §f1 §2second..."
+      message: "§l§2Очистка » Очистка сервера через §f1 §2секунду..."
       type: "message"
   completed:
-    message: "§l§2ServerCleaner » §fServer cleanup §2complete..."
+    message: "§l§2Очистка » §fОчистка сервера §2завершена..."
     type: "message"
   
-  toast-title: "§l§2ServerCleaner »" # Header for toast notification...
+  toast-title: "§l§2ServerCleaner »"
 
 
-# Clear options...
+# Опции очистки...
 clear-options:
-  clear-mobs: true # Clearing mobs...
-  clear-items: true # Clearing items...
+  clear-mobs: true 
+  clear-items: true 
 
-  mob-exceptions: # Mobs that cannot be deleted...
+  mob-exceptions: 
     - "minecraft:horse"
     - "minecraft:iron_golem"
-  item-exceptions: # Items that cannot be deleted...
+  item-exceptions: 
     - "minecraft:diamond"
     - "minecraft:nether_star"
 
-# Messages...
+# Сообщения...
 messages:
-  no_permission: "§l§2ServerCleaner » You do not have permission to use this command..."
+  no_permission: "§l§2Очистка » У вас нет прав на использование этой команды..."
+  
